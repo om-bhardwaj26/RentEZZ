@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1017291109907",
+    "project_id": "rentez-ab676",
+    "storage_bucket": "rentez-ab676.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017291109907:android:fb8b81123407fbbeec31e6",
+        "android_client_info": {
+          "package_name": "com.example.rentezz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6cUecTlJRK7dpwq5OiGVf-FXxp6MlkTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

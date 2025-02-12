@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63C5C5">
+
+    <!-- CardView-like background -->
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:elevation="4dp"
+        android:translationZ="4dp"
+        android:radius="10dp">
+
+
+
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USER LOGIN"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#333" />
+
+
+        <EditText
+            android:id="@+id/room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="room number"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:drawablePadding="8dp"
+            android:layout_below="@id/login_title"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background_normal" />
+
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableStart="@android:drawable/ic_lock_lock"
+            android:drawablePadding="8dp"
+            android:layout_below="@id/room"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background_normal" />
+
+
+        <CheckBox
+            android:id="@+id/remember_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:layout_below="@id/password_input"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:textColor="#333" />
+
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#007BFF"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/password_input"
+            android:layout_marginTop="16dp" />
+
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/remember_me"
+            android:background="#007BFF"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
