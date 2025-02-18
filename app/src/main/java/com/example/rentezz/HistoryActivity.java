@@ -130,15 +130,11 @@ public class HistoryActivity extends AppCompatActivity {
 
 
 
-
         fetchDataFromFirestore(room);
-
     }
 
 
 }
-
-
 
 //get command from firebase
 

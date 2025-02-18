@@ -5,13 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="10dp">
 
-
-
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="30dp">
+        app:cardCornerRadius="30dp"
+        app:cardElevation="4dp"
+        android:background="#FFFFFF">
 
         <LinearLayout
             android:id="@+id/llmain"
@@ -21,19 +20,21 @@
             android:orientation="vertical"
             android:padding="11dp">
 
-
             <TextView
                 android:id="@+id/date"
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:text="date"
-                android:textSize="30sp" />
+                android:textColor="#333333"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/name"
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:text="name"
+                android:textColor="#666666"
                 android:textSize="30sp" />
 
             <TextView
@@ -41,6 +42,7 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:text="electric"
+                android:textColor="#2196F3"
                 android:textSize="30sp" />
 
             <TextView
@@ -48,8 +50,9 @@
                 android:layout_width="188dp"
                 android:layout_height="wrap_content"
                 android:text="totalrent"
-                android:textSize="30sp" />
-
+                android:textColor="#E91E63"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -59,22 +62,29 @@
                 android:layout_marginTop="10dp">
 
                 <Button
+                    android:id="@+id/paid_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Paid" />
+                    android:layout_marginEnd="8dp"
+                    android:text="Pay Now"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_background"
+                    android:textColor="#FFFFFF" />
 
                 <Button
+                    android:id="@+id/view_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-
-                    android:text="view" />
+                    android:layout_marginStart="8dp"
+                    android:text="View"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_background_outlined"
+                    android:textColor="#2196F3" />
             </LinearLayout>
 
-
         </LinearLayout>
-
 
     </androidx.cardview.widget.CardView>
 
